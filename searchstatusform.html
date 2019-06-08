@@ -1,0 +1,65 @@
+<!--
+   searchstatusform.html
+
+   Copyright 2019 Frankie <frankie@frankie-GE60-2PE>
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+
+
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Serach Status</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.27" />
+	<link rel="stylesheet" href="style/style.css">
+	<style>
+		input[type=text] {
+			width: 80%;
+			padding: 5px;
+			background-color: lightgrey;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Status Posting System</h1>
+	</div>
+	<div class="topnav">
+		<button type="button" name="button"><a href="index.html">Home</a></button>
+		<button type="button" name="button"><a href="poststatusform.php">Posting</a></button>
+		<button type="button" name="button"><a href="searchstatusform.html">Searching</a></button>
+		<button type="button" name="button"><a href="about.html">About</a></button>
+	</div>
+	<form action="searchstatusprocess.php" method="get">
+		<div class="ex1">
+			<label>Status: <input type="text" required name="search" </label> <br><br>
+				<input type="submit" class="btn btn-primary" value="View Status">
+				<br><br>
+				<table width="100%">
+					<tr>
+						<td align="left"><a href="poststatusform.php">Post a new Status</a></td>
+						<td align="right"><a href="index.html">Return to Home Page</a></td>
+					</tr>
+				</table>
+		</div>
+	</form>
+</body>
+
+</html>
